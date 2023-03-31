@@ -76,12 +76,12 @@ export const ToDoList = () => {
 
   return (
     <div>
-      <button onClick={createPost}>Post</button>
-      <button onClick={clearFetch}>Delete All</button>
-      <h1 className="todo-header">Todos</h1>
+      <button onClick={createPost}><i class="far fa-save"></i> Save</button>
+      <button onClick={clearFetch}><i class="fas fa-trash-alt"></i> Delete All</button>
+      <h1 className="todo-header">TODOS</h1>
       <div className="todos-container d-flex flex-column">
         <div className="todos-container-header d-flex flex-row">
-          <span className="me-3">Tasks</span>
+          <span className="me-3">Task</span>
           <input
             type="text"
             onChange={inputValue}
